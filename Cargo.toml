@@ -8,3 +8,4 @@ crate-type = ["cdylib", "lib"]
 
 [dependencies]
 anchor-lang = "=0.31.2"
+blake3 = "=1.5.5"
