@@ -1,32 +1,39 @@
-﻿2026-11-27T06:48:21.2579669Z ##[group]Run cargo build-sbf
-2026-11-27T06:48:21.2579985Z [36;1mcargo build-sbf[0m
-2026-11-27T06:48:21.2600264Z shell: /usr/bin/bash -e {0}
-2026-11-27T06:48:21.2600572Z ##[endgroup]
-2026-11-27T06:49:03.6992320Z     Updating crates.io index
-2026-11-27T06:49:04.2823071Z  Downloading crates ...
-2026-11-27T06:49:04.3585349Z   Downloaded curve25519-dalek-derive v0.1.1
-2026-11-27T06:49:04.3597057Z   Downloaded autocfg v1.5.1
-2026-11-27T06:49:04.3636263Z   Downloaded anchor-derive-space v0.31.3
-2026-11-27T06:49:04.3673252Z   Downloaded arrayvec v0.7.8
-2026-11-27T06:49:04.3715110Z   Downloaded anchor-attribute-error v0.31.3
-2026-11-27T06:49:04.3739852Z   Downloaded arrayref v0.3.9
-2026-11-27T06:49:04.3763297Z   Downloaded anchor-lang-idl-spec v0.1.0
-2026-11-27T06:49:04.3769964Z   Downloaded solana-example-mocks v2.2.1
-2026-11-27T06:49:04.3771762Z   Downloaded opaque-debug v0.3.1
-2026-11-27T06:49:04.3772260Z   Downloaded solana-sdk-macro v2.2.1
-2026-11-27T06:49:04.3781948Z   Downloaded solana-rent v2.2.1
-2026-11-27T06:49:04.3794663Z   Downloaded rand_chacha v0.3.1
-2026-11-27T06:49:04.3862780Z   Downloaded solana-epoch-schedule v2.2.1
-2026-11-27T06:49:04.3884802Z   Downloaded solana-fee-calculator v2.2.1
-2026-11-27T06:49:04.3895658Z   Downloaded solana-epoch-rewards v2.2.1
-2026-11-27T06:49:04.3901986Z   Downloaded curve25519-dalek v4.1.3
-2026-11-27T06:49:04.3963371Z   Downloaded blake3 v1.8.8
-2026-11-27T06:49:04.4232495Z error: failed to parse manifest at `/home/runner/.cargo/registry/src/index.crates.io-6f17d22bba15001f/blake3-1.8.8/Cargo.toml`
-2026-11-27T06:49:04.4232930Z 
-2026-11-27T06:49:04.4233138Z Caused by:
-2026-11-27T06:49:04.4233374Z   feature `edition2024` is required
-2026-11-27T06:49:04.4233549Z 
-2026-11-27T06:49:04.4233881Z   The package requires the Cargo feature called `edition2024`, but that feature is not stabilized in this version of Cargo (1.79.0 (8d3d6ef09 2024-08-15)).
-2026-11-27T06:49:04.4234422Z   Consider trying a more recent nightly release.
-2026-11-27T06:49:04.4234998Z   See https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#edition-2024 for more information about the status of this feature.
-2026-11-27T06:49:04.4287603Z ##[error]Process completed with exit code 1.
+﻿2026-11-27T15:08:38.3805154Z ##[group]Run cargo build-sbf
+2026-11-27T15:08:38.3805537Z [36;1mcargo build-sbf[0m
+2026-11-27T15:08:38.3845269Z shell: /usr/bin/bash -e {0}
+2026-11-27T15:08:38.3845616Z ##[endgroup]
+2026-11-27T15:09:28.5928432Z     Updating crates.io index
+2026-11-27T15:09:29.0566051Z  Downloading crates ...
+2026-11-27T15:09:29.1457693Z   Downloaded digest v0.9.0
+2026-11-27T15:09:29.1514562Z   Downloaded anchor-attribute-program v0.31.3
+2026-11-27T15:09:29.1592839Z   Downloaded ahash v0.8.14
+2026-11-27T15:09:29.1593702Z   Downloaded serde_bytes v0.11.19
+2026-11-27T15:09:29.1643461Z   Downloaded rand_core v0.5.1
+2026-11-27T15:09:29.1674175Z   Downloaded solana-nonce v2.2.1
+2026-11-27T15:09:29.1691570Z   Downloaded zmij v1.0.23
+2026-11-27T15:09:29.1722165Z   Downloaded solana-bincode v2.2.1
+2026-11-27T15:09:29.1737551Z   Downloaded solana-last-restart-slot v2.2.1
+2026-11-27T15:09:29.1747176Z   Downloaded solana-keccak-hasher v2.2.1
+2026-11-27T15:09:29.1766844Z   Downloaded shlex v2.0.1
+2026-11-27T15:09:29.1810820Z   Downloaded solana-vote-interface v2.2.6
+2026-11-27T15:09:29.1887245Z   Downloaded version_check v0.9.5
+2026-11-27T15:09:29.1932886Z   Downloaded solana-borsh v2.2.1
+2026-11-27T15:09:29.1957813Z   Downloaded solana-clock v2.2.3
+2026-11-27T15:09:29.1979142Z   Downloaded zerocopy v0.8.66
+2026-11-27T15:09:29.2287672Z   Downloaded winnow v1.0.5
+2026-11-27T15:09:29.2403014Z   Downloaded syn v2.0.119
+2026-11-27T15:09:29.2531720Z   Downloaded sha3 v0.10.9
+2026-11-27T15:09:29.2576147Z   Downloaded libc v0.2.191
+2026-11-27T15:09:29.3094682Z   Downloaded curve25519-dalek v4.1.3
+2026-11-27T15:09:29.3191205Z   Downloaded solana-big-mod-exp v2.2.1
+2026-11-27T15:09:29.3198007Z   Downloaded solana-atomic-u64 v2.2.1
+2026-11-27T15:09:29.3205124Z   Downloaded zeroize v1.9.2
+2026-11-27T15:09:29.3451709Z error: failed to parse manifest at `/home/runner/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zeroize-1.9.2/Cargo.toml`
+2026-11-27T15:09:29.3452717Z 
+2026-11-27T15:09:29.3452877Z Caused by:
+2026-11-27T15:09:29.3453262Z   feature `edition2024` is required
+2026-11-27T15:09:29.3453644Z 
+2026-11-27T15:09:29.3454468Z   The package requires the Cargo feature called `edition2024`, but that feature is not stabilized in this version of Cargo (1.79.0 (8d3d6ef09 2024-08-15)).
+2026-11-27T15:09:29.3455329Z   Consider trying a more recent nightly release.
+2026-11-27T15:09:29.3456198Z   See https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#edition-2024 for more information about the status of this feature.
+2026-11-27T15:09:29.3555282Z ##[error]Process completed with exit code 1.
