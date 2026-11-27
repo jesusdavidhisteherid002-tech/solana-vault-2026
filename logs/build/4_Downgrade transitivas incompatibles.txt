@@ -1,0 +1,23 @@
+﻿2026-11-27T15:33:49.3155651Z ##[group]Run cargo update -p blake3 --precise 1.5.5
+2026-11-27T15:33:49.3156150Z [36;1mcargo update -p blake3 --precise 1.5.5[0m
+2026-11-27T15:33:49.3156510Z [36;1mcargo update -p zeroize --precise 1.8.1[0m
+2026-11-27T15:33:49.3156918Z [36;1mcargo update -p curve25519-dalek --precise 4.1.3[0m
+2026-11-27T15:33:49.3157321Z [36;1mcargo update -p serde --precise 1.0.210[0m
+2026-11-27T15:33:49.3157709Z [36;1mcargo update -p thiserror --precise 1.0.63[0m
+2026-11-27T15:33:49.3182660Z shell: /usr/bin/bash -e {0}
+2026-11-27T15:33:49.3183042Z ##[endgroup]
+2026-11-27T15:33:49.4102971Z     Updating crates.io index
+2026-11-27T15:33:50.1798220Z     Updating crates.io index
+2026-11-27T15:33:50.5631948Z note: pass `--verbose` to see 3 unchanged dependencies behind latest
+2026-11-27T15:33:50.6001360Z     Updating crates.io index
+2026-11-27T15:33:51.0228276Z note: pass `--verbose` to see 3 unchanged dependencies behind latest
+2026-11-27T15:33:51.0602728Z     Updating crates.io index
+2026-11-27T15:33:51.4845270Z note: pass `--verbose` to see 4 unchanged dependencies behind latest
+2026-11-27T15:33:51.5225392Z     Updating crates.io index
+2026-11-27T15:33:51.6865714Z error: failed to select a version for the requirement `serde = "^1.0.217"`
+2026-11-27T15:33:51.6866533Z candidate versions found which didn't match: 1.0.210
+2026-11-27T15:33:51.6867096Z location searched: crates.io index
+2026-11-27T15:33:51.6867680Z required by package `solana-program v2.3.0`
+2026-11-27T15:33:51.6868530Z     ... which satisfies dependency `solana-program = "^2"` (locked to 2.3.0) of package `anchor-lang v0.31.2`
+2026-11-27T15:33:51.6869745Z     ... which satisfies dependency `anchor-lang = "=0.31.2"` (locked to 0.31.2) of package `blueshift_anchor_vault v0.1.0 (/home/runner/work/solana-vault-2026/solana-vault-2026)`
+2026-11-27T15:33:51.6895814Z ##[error]Process completed with exit code 101.

@@ -1,178 +1,162 @@
-﻿2026-11-27T15:08:08.6169825Z Current runner version: '2.338.2'
-2026-11-27T15:08:08.6196230Z ##[group]Runner Image Provisioner
-2026-11-27T15:08:08.6197307Z Hosted Compute Agent
-2026-11-27T15:08:08.6197913Z Version: 20261111.635
-2026-11-27T15:08:08.6198595Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
-2026-11-27T15:08:08.6199364Z Build Date: 2026-11-11T01:49:01Z
-2026-11-27T15:08:08.6200276Z Worker ID: {6eb57009-af75-4b14-8247-d815047b94f3}
-2026-11-27T15:08:08.6201097Z Region: westus
-2026-11-27T15:08:08.6201655Z Cloud: Azure
-2026-11-27T15:08:08.6202183Z ##[endgroup]
-2026-11-27T15:08:08.6203773Z ##[group]Operating System
-2026-11-27T15:08:08.6204518Z Ubuntu
-2026-11-27T15:08:08.6205199Z 26.04.1
-2026-11-27T15:08:08.6205716Z LTS
-2026-11-27T15:08:08.6206219Z ##[endgroup]
-2026-11-27T15:08:08.6206834Z ##[group]Runner Image
-2026-11-27T15:08:08.6207447Z Image: ubuntu-26.04
-2026-11-27T15:08:08.6208088Z Version: 20261116.202.1
-2026-11-27T15:08:08.6209380Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
-2026-11-27T15:08:08.6211394Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
-2026-11-27T15:08:08.6212372Z ##[endgroup]
-2026-11-27T15:08:08.6213707Z ##[group]GITHUB_TOKEN Permissions
-2026-11-27T15:08:08.6215935Z Contents: read
-2026-11-27T15:08:08.6216972Z Metadata: read
-2026-11-27T15:08:08.6217578Z Packages: read
-2026-11-27T15:08:08.6218179Z ##[endgroup]
-2026-11-27T15:08:08.6220696Z Secret source: Actions
-2026-11-27T15:08:08.6221627Z Cache mode: write
-2026-11-27T15:08:08.6222440Z Prepare workflow directory
-2026-11-27T15:08:08.6589030Z Prepare all required actions
-2026-11-27T15:08:08.6664575Z Getting action download info
-2026-11-27T15:08:09.0250414Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
-2026-11-27T15:08:09.1372612Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
-2026-11-27T15:08:09.3257697Z Complete job name: build
-2026-11-27T15:08:09.4158487Z ##[group]Run actions/checkout@v4
-2026-11-27T15:08:09.4159401Z with:
-2026-11-27T15:08:09.4160169Z   repository: jesusdavidhisteherid002-tech/solana-vault-2026
-2026-11-27T15:08:09.4164024Z   token: ***
-2026-11-27T15:08:09.4164489Z   ssh-strict: true
-2026-11-27T15:08:09.4164953Z   ssh-user: git
-2026-11-27T15:08:09.4165434Z   persist-credentials: true
-2026-11-27T15:08:09.4165949Z   clean: true
-2026-11-27T15:08:09.4166416Z   sparse-checkout-cone-mode: true
-2026-11-27T15:08:09.4166954Z   fetch-depth: 1
-2026-11-27T15:08:09.4167405Z   fetch-tags: false
-2026-11-27T15:08:09.4167883Z   show-progress: true
-2026-11-27T15:08:09.4168351Z   lfs: false
-2026-11-27T15:08:09.4168777Z   submodules: false
-2026-11-27T15:08:09.4169240Z   set-safe-directory: true
-2026-11-27T15:08:09.4169874Z   allow-unsafe-pr-checkout: false
-2026-11-27T15:08:09.4170712Z ##[endgroup]
-2026-11-27T15:08:09.7059816Z Syncing repository: jesusdavidhisteherid002-tech/solana-vault-2026
-2026-11-27T15:08:09.7063917Z ##[group]Getting Git version info
-2026-11-27T15:08:09.7065722Z Working directory is '/home/runner/work/solana-vault-2026/solana-vault-2026'
-2026-11-27T15:08:09.7068314Z [command]/usr/bin/git version
-2026-11-27T15:08:09.7081371Z git version 2.56.1
-2026-11-27T15:08:09.7104468Z ##[endgroup]
-2026-11-27T15:08:09.7123382Z Temporarily overriding HOME='/home/runner/work/_temp/c28afcc9-8af0-4a51-876e-39357a5aab20' before making global git config changes
-2026-11-27T15:08:09.7126292Z Adding repository directory to the temporary git global config as a safe directory
-2026-11-27T15:08:09.7129029Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solana-vault-2026/solana-vault-2026
-2026-11-27T15:08:09.7221426Z Deleting the contents of '/home/runner/work/solana-vault-2026/solana-vault-2026'
-2026-11-27T15:08:09.7231677Z ##[group]Initializing the repository
-2026-11-27T15:08:09.7251315Z [command]/usr/bin/git init /home/runner/work/solana-vault-2026/solana-vault-2026
-2026-11-27T15:08:09.7354840Z hint: Using 'master' as the name for the initial branch. This default branch name
-2026-11-27T15:08:09.7356490Z hint: will change to "main" in Git 3.0. To configure the initial branch name
-2026-11-27T15:08:09.7357620Z hint: to use in all of your new repositories, which will suppress this warning,
-2026-11-27T15:08:09.7358518Z hint: call:
-2026-11-27T15:08:09.7358974Z hint:
-2026-11-27T15:08:09.7359786Z hint: 	git config --global init.defaultBranch <name>
-2026-11-27T15:08:09.7360671Z hint:
-2026-11-27T15:08:09.7361363Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-2026-11-27T15:08:09.7362467Z hint: 'development'. The just-created branch can be renamed via this command:
-2026-11-27T15:08:09.7363621Z hint:
-2026-11-27T15:08:09.7364186Z hint: 	git branch -m <name>
-2026-11-27T15:08:09.7372440Z hint:
-2026-11-27T15:08:09.7373723Z hint: Disable this message with "git config set advice.defaultBranchName false"
-2026-11-27T15:08:09.7375054Z Initialized empty Git repository in /home/runner/work/solana-vault-2026/solana-vault-2026/.git/
-2026-11-27T15:08:09.7391668Z [command]/usr/bin/git remote add origin https://github.com/jesusdavidhisteherid002-tech/solana-vault-2026
-2026-11-27T15:08:09.7460128Z ##[endgroup]
-2026-11-27T15:08:09.7462187Z ##[group]Disabling automatic garbage collection
-2026-11-27T15:08:09.7464921Z [command]/usr/bin/git config --local gc.auto 0
-2026-11-27T15:08:09.7513018Z ##[endgroup]
-2026-11-27T15:08:09.7517390Z ##[group]Setting up auth
-2026-11-27T15:08:09.7521672Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-2026-11-27T15:08:09.7572985Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-2026-11-27T15:08:09.8106391Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2026-11-27T15:08:09.8150059Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-2026-11-27T15:08:09.8447407Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-2026-11-27T15:08:09.8490033Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-2026-11-27T15:08:09.8789335Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-2026-11-27T15:08:09.8834819Z ##[endgroup]
-2026-11-27T15:08:09.8843991Z ##[group]Fetching the repository
-2026-11-27T15:08:09.8845804Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +88a0128ecf5e95df6c4fbae9b127ba99b44eaad0:refs/remotes/origin/main
-2026-11-27T15:08:10.2396676Z From https://github.com/jesusdavidhisteherid002-tech/solana-vault-2026
-2026-11-27T15:08:10.2400572Z  * [new ref]         88a0128ecf5e95df6c4fbae9b127ba99b44eaad0 -> origin/main
-2026-11-27T15:08:10.2407627Z ##[endgroup]
-2026-11-27T15:08:10.2410540Z ##[group]Determining the checkout info
-2026-11-27T15:08:10.2413893Z ##[endgroup]
-2026-11-27T15:08:10.2415470Z [command]/usr/bin/git sparse-checkout disable
-2026-11-27T15:08:10.2475298Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
-2026-11-27T15:08:10.2511873Z ##[group]Checking out the ref
-2026-11-27T15:08:10.2517012Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
-2026-11-27T15:08:10.2607647Z Switched to a new branch 'main'
-2026-11-27T15:08:10.2614505Z branch 'main' set up to track 'origin/main'.
-2026-11-27T15:08:10.2621375Z ##[endgroup]
-2026-11-27T15:08:10.2668548Z [command]/usr/bin/git log -1 --format=%H
-2026-11-27T15:08:10.2695750Z 88a0128ecf5e95df6c4fbae9b127ba99b44eaad0
-2026-11-27T15:08:10.2986128Z ##[group]Run sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
-2026-11-27T15:08:10.2988498Z [36;1msh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"[0m
-2026-11-27T15:08:10.2991260Z [36;1mecho "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH[0m
-2026-11-27T15:08:10.3030879Z shell: /usr/bin/bash -e {0}
-2026-11-27T15:08:10.3032120Z ##[endgroup]
-2026-11-27T15:08:10.3870220Z downloading v2.1.21 installer
-2026-11-27T15:08:38.3535891Z   ✨ 2.1.21 initialized
-2026-11-27T15:08:38.3599931Z Adding 
-2026-11-27T15:08:38.3600744Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH" to /home/runner/.profile
-2026-11-27T15:08:38.3676475Z Adding 
-2026-11-27T15:08:38.3677455Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH" to /home/runner/.bash_profile
-2026-11-27T15:08:38.3690376Z 
-2026-11-27T15:08:38.3691330Z Close and reopen your terminal to apply the PATH changes or run the following in your existing shell:
-2026-11-27T15:08:38.3692408Z   
-2026-11-27T15:08:38.3693214Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH"
-2026-11-27T15:08:38.3693948Z 
-2026-11-27T15:08:38.3805179Z ##[group]Run cargo build-sbf
-2026-11-27T15:08:38.3805541Z [36;1mcargo build-sbf[0m
-2026-11-27T15:08:38.3845296Z shell: /usr/bin/bash -e {0}
-2026-11-27T15:08:38.3845619Z ##[endgroup]
-2026-11-27T15:09:28.5928607Z     Updating crates.io index
-2026-11-27T15:09:29.0566086Z  Downloading crates ...
-2026-11-27T15:09:29.1457728Z   Downloaded digest v0.9.0
-2026-11-27T15:09:29.1514597Z   Downloaded anchor-attribute-program v0.31.3
-2026-11-27T15:09:29.1592874Z   Downloaded ahash v0.8.14
-2026-11-27T15:09:29.1593712Z   Downloaded serde_bytes v0.11.19
-2026-11-27T15:09:29.1643484Z   Downloaded rand_core v0.5.1
-2026-11-27T15:09:29.1674190Z   Downloaded solana-nonce v2.2.1
-2026-11-27T15:09:29.1691581Z   Downloaded zmij v1.0.23
-2026-11-27T15:09:29.1722178Z   Downloaded solana-bincode v2.2.1
-2026-11-27T15:09:29.1737562Z   Downloaded solana-last-restart-slot v2.2.1
-2026-11-27T15:09:29.1747184Z   Downloaded solana-keccak-hasher v2.2.1
-2026-11-27T15:09:29.1766858Z   Downloaded shlex v2.0.1
-2026-11-27T15:09:29.1810933Z   Downloaded solana-vote-interface v2.2.6
-2026-11-27T15:09:29.1887283Z   Downloaded version_check v0.9.5
-2026-11-27T15:09:29.1932908Z   Downloaded solana-borsh v2.2.1
-2026-11-27T15:09:29.1957827Z   Downloaded solana-clock v2.2.3
-2026-11-27T15:09:29.1979156Z   Downloaded zerocopy v0.8.66
-2026-11-27T15:09:29.2287709Z   Downloaded winnow v1.0.5
-2026-11-27T15:09:29.2403046Z   Downloaded syn v2.0.119
-2026-11-27T15:09:29.2531748Z   Downloaded sha3 v0.10.9
-2026-11-27T15:09:29.2576161Z   Downloaded libc v0.2.191
-2026-11-27T15:09:29.3094724Z   Downloaded curve25519-dalek v4.1.3
-2026-11-27T15:09:29.3191240Z   Downloaded solana-big-mod-exp v2.2.1
-2026-11-27T15:09:29.3198024Z   Downloaded solana-atomic-u64 v2.2.1
-2026-11-27T15:09:29.3205142Z   Downloaded zeroize v1.9.2
-2026-11-27T15:09:29.3451751Z error: failed to parse manifest at `/home/runner/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zeroize-1.9.2/Cargo.toml`
-2026-11-27T15:09:29.3452722Z 
-2026-11-27T15:09:29.3452881Z Caused by:
-2026-11-27T15:09:29.3453306Z   feature `edition2024` is required
-2026-11-27T15:09:29.3453648Z 
-2026-11-27T15:09:29.3454472Z   The package requires the Cargo feature called `edition2024`, but that feature is not stabilized in this version of Cargo (1.79.0 (8d3d6ef09 2024-08-15)).
-2026-11-27T15:09:29.3455332Z   Consider trying a more recent nightly release.
-2026-11-27T15:09:29.3456201Z   See https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#edition-2024 for more information about the status of this feature.
-2026-11-27T15:09:29.3555311Z ##[error]Process completed with exit code 1.
-2026-11-27T15:09:29.3702596Z Post job cleanup.
-2026-11-27T15:09:29.4582584Z [command]/usr/bin/git version
-2026-11-27T15:09:29.4629337Z git version 2.56.1
-2026-11-27T15:09:29.4681046Z Temporarily overriding HOME='/home/runner/work/_temp/e75917d0-6bba-44a8-b29b-1630eb17a1ab' before making global git config changes
-2026-11-27T15:09:29.4682812Z Adding repository directory to the temporary git global config as a safe directory
-2026-11-27T15:09:29.4684629Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solana-vault-2026/solana-vault-2026
-2026-11-27T15:09:29.4725955Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-2026-11-27T15:09:29.4771610Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-2026-11-27T15:09:29.5095463Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2026-11-27T15:09:29.5126553Z http.https://github.com/.extraheader
-2026-11-27T15:09:29.5141037Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
-2026-11-27T15:09:29.5197552Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-2026-11-27T15:09:29.5571691Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
-2026-11-27T15:09:29.5626265Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
-2026-11-27T15:09:29.6115806Z Cleaning up orphan processes
-2026-11-27T15:09:29.6607867Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+﻿2026-11-27T15:33:20.4244679Z Current runner version: '2.338.2'
+2026-11-27T15:33:20.4264051Z ##[group]Runner Image Provisioner
+2026-11-27T15:33:20.4264806Z Hosted Compute Agent
+2026-11-27T15:33:20.4265338Z Version: 20261111.635
+2026-11-27T15:33:20.4265846Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+2026-11-27T15:33:20.4266493Z Build Date: 2026-11-11T01:49:01Z
+2026-11-27T15:33:20.4267075Z Worker ID: {d7633f20-ddc3-4233-9c26-8e9e248bc6b3}
+2026-11-27T15:33:20.4267663Z Region: centralus
+2026-11-27T15:33:20.4268463Z Cloud: Azure
+2026-11-27T15:33:20.4268918Z ##[endgroup]
+2026-11-27T15:33:20.4270110Z ##[group]Operating System
+2026-11-27T15:33:20.4270640Z Ubuntu
+2026-11-27T15:33:20.4271052Z 26.04.1
+2026-11-27T15:33:20.4271537Z LTS
+2026-11-27T15:33:20.4271964Z ##[endgroup]
+2026-11-27T15:33:20.4272425Z ##[group]Runner Image
+2026-11-27T15:33:20.4272943Z Image: ubuntu-26.04
+2026-11-27T15:33:20.4273388Z Version: 20261116.202.1
+2026-11-27T15:33:20.4274447Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+2026-11-27T15:33:20.4275695Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+2026-11-27T15:33:20.4276497Z ##[endgroup]
+2026-11-27T15:33:20.4277592Z ##[group]GITHUB_TOKEN Permissions
+2026-11-27T15:33:20.4279674Z Contents: read
+2026-11-27T15:33:20.4280139Z Metadata: read
+2026-11-27T15:33:20.4280662Z Packages: read
+2026-11-27T15:33:20.4281115Z ##[endgroup]
+2026-11-27T15:33:20.4283042Z Secret source: Actions
+2026-11-27T15:33:20.4283838Z Cache mode: write
+2026-11-27T15:33:20.4284408Z Prepare workflow directory
+2026-11-27T15:33:20.4586963Z Prepare all required actions
+2026-11-27T15:33:20.4627244Z Getting action download info
+2026-11-27T15:33:20.7601008Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-27T15:33:20.8297367Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-27T15:33:21.0001272Z Complete job name: build
+2026-11-27T15:33:21.0646339Z ##[group]Run actions/checkout@v4
+2026-11-27T15:33:21.0647099Z with:
+2026-11-27T15:33:21.0647636Z   repository: jesusdavidhisteherid002-tech/solana-vault-2026
+2026-11-27T15:33:21.0651473Z   token: ***
+2026-11-27T15:33:21.0651900Z   ssh-strict: true
+2026-11-27T15:33:21.0652335Z   ssh-user: git
+2026-11-27T15:33:21.0652788Z   persist-credentials: true
+2026-11-27T15:33:21.0653259Z   clean: true
+2026-11-27T15:33:21.0653713Z   sparse-checkout-cone-mode: true
+2026-11-27T15:33:21.0654240Z   fetch-depth: 1
+2026-11-27T15:33:21.0654697Z   fetch-tags: false
+2026-11-27T15:33:21.0655144Z   show-progress: true
+2026-11-27T15:33:21.0655577Z   lfs: false
+2026-11-27T15:33:21.0656021Z   submodules: false
+2026-11-27T15:33:21.0656462Z   set-safe-directory: true
+2026-11-27T15:33:21.0656940Z   allow-unsafe-pr-checkout: false
+2026-11-27T15:33:21.0657612Z ##[endgroup]
+2026-11-27T15:33:21.3102096Z Syncing repository: jesusdavidhisteherid002-tech/solana-vault-2026
+2026-11-27T15:33:21.3104616Z ##[group]Getting Git version info
+2026-11-27T15:33:21.3105838Z Working directory is '/home/runner/work/solana-vault-2026/solana-vault-2026'
+2026-11-27T15:33:21.3107559Z [command]/usr/bin/git version
+2026-11-27T15:33:21.3108770Z git version 2.56.1
+2026-11-27T15:33:21.3110893Z ##[endgroup]
+2026-11-27T15:33:21.3119530Z Temporarily overriding HOME='/home/runner/work/_temp/83b85808-d6d2-4a4c-b24e-51f623d783df' before making global git config changes
+2026-11-27T15:33:21.3123590Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T15:33:21.3125455Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solana-vault-2026/solana-vault-2026
+2026-11-27T15:33:21.3180988Z Deleting the contents of '/home/runner/work/solana-vault-2026/solana-vault-2026'
+2026-11-27T15:33:21.3183421Z ##[group]Initializing the repository
+2026-11-27T15:33:21.3188054Z [command]/usr/bin/git init /home/runner/work/solana-vault-2026/solana-vault-2026
+2026-11-27T15:33:21.3281865Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-27T15:33:21.3283540Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-27T15:33:21.3284596Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-27T15:33:21.3285611Z hint: call:
+2026-11-27T15:33:21.3286091Z hint:
+2026-11-27T15:33:21.3286702Z hint: 	git config --global init.defaultBranch <name>
+2026-11-27T15:33:21.3287487Z hint:
+2026-11-27T15:33:21.3288403Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-27T15:33:21.3289478Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-27T15:33:21.3290640Z hint:
+2026-11-27T15:33:21.3291401Z hint: 	git branch -m <name>
+2026-11-27T15:33:21.3292236Z hint:
+2026-11-27T15:33:21.3293228Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-27T15:33:21.3302625Z Initialized empty Git repository in /home/runner/work/solana-vault-2026/solana-vault-2026/.git/
+2026-11-27T15:33:21.3309792Z [command]/usr/bin/git remote add origin https://github.com/jesusdavidhisteherid002-tech/solana-vault-2026
+2026-11-27T15:33:21.3344881Z ##[endgroup]
+2026-11-27T15:33:21.3345741Z ##[group]Disabling automatic garbage collection
+2026-11-27T15:33:21.3348865Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-27T15:33:21.3376028Z ##[endgroup]
+2026-11-27T15:33:21.3376874Z ##[group]Setting up auth
+2026-11-27T15:33:21.3382897Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T15:33:21.3409205Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T15:33:21.3793193Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T15:33:21.3834862Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T15:33:21.4030136Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T15:33:21.4054723Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T15:33:21.4241593Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-27T15:33:21.4271048Z ##[endgroup]
+2026-11-27T15:33:21.4272743Z ##[group]Fetching the repository
+2026-11-27T15:33:21.4279912Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +815e703581e397ab064668924e4573ece4415c47:refs/remotes/origin/main
+2026-11-27T15:33:21.7829774Z From https://github.com/jesusdavidhisteherid002-tech/solana-vault-2026
+2026-11-27T15:33:21.7831393Z  * [new ref]         815e703581e397ab064668924e4573ece4415c47 -> origin/main
+2026-11-27T15:33:21.7834320Z ##[endgroup]
+2026-11-27T15:33:21.7835575Z ##[group]Determining the checkout info
+2026-11-27T15:33:21.7837158Z ##[endgroup]
+2026-11-27T15:33:21.7841703Z [command]/usr/bin/git sparse-checkout disable
+2026-11-27T15:33:21.7888480Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-27T15:33:21.7910867Z ##[group]Checking out the ref
+2026-11-27T15:33:21.7914421Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-27T15:33:21.7984929Z Switched to a new branch 'main'
+2026-11-27T15:33:21.7989104Z branch 'main' set up to track 'origin/main'.
+2026-11-27T15:33:21.7992984Z ##[endgroup]
+2026-11-27T15:33:21.8028804Z [command]/usr/bin/git log -1 --format=%H
+2026-11-27T15:33:21.8046689Z 815e703581e397ab064668924e4573ece4415c47
+2026-11-27T15:33:21.8243758Z ##[group]Run sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
+2026-11-27T15:33:21.8244848Z [36;1msh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"[0m
+2026-11-27T15:33:21.8245948Z [36;1mecho "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH[0m
+2026-11-27T15:33:21.8269422Z shell: /usr/bin/bash -e {0}
+2026-11-27T15:33:21.8270072Z ##[endgroup]
+2026-11-27T15:33:21.9883090Z downloading v2.1.21 installer
+2026-11-27T15:33:49.3046095Z   ✨ 2.1.21 initialized
+2026-11-27T15:33:49.3047295Z Adding 
+2026-11-27T15:33:49.3048332Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH" to /home/runner/.profile
+2026-11-27T15:33:49.3061440Z Adding 
+2026-11-27T15:33:49.3062449Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH" to /home/runner/.bash_profile
+2026-11-27T15:33:49.3066985Z 
+2026-11-27T15:33:49.3067995Z Close and reopen your terminal to apply the PATH changes or run the following in your existing shell:
+2026-11-27T15:33:49.3068768Z   
+2026-11-27T15:33:49.3069444Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH"
+2026-11-27T15:33:49.3069866Z 
+2026-11-27T15:33:49.3155674Z ##[group]Run cargo update -p blake3 --precise 1.5.5
+2026-11-27T15:33:49.3156155Z [36;1mcargo update -p blake3 --precise 1.5.5[0m
+2026-11-27T15:33:49.3156515Z [36;1mcargo update -p zeroize --precise 1.8.1[0m
+2026-11-27T15:33:49.3156923Z [36;1mcargo update -p curve25519-dalek --precise 4.1.3[0m
+2026-11-27T15:33:49.3157342Z [36;1mcargo update -p serde --precise 1.0.210[0m
+2026-11-27T15:33:49.3157713Z [36;1mcargo update -p thiserror --precise 1.0.63[0m
+2026-11-27T15:33:49.3182684Z shell: /usr/bin/bash -e {0}
+2026-11-27T15:33:49.3183047Z ##[endgroup]
+2026-11-27T15:33:49.4102996Z     Updating crates.io index
+2026-11-27T15:33:50.1798246Z     Updating crates.io index
+2026-11-27T15:33:50.5631991Z note: pass `--verbose` to see 3 unchanged dependencies behind latest
+2026-11-27T15:33:50.6001398Z     Updating crates.io index
+2026-11-27T15:33:51.0228316Z note: pass `--verbose` to see 3 unchanged dependencies behind latest
+2026-11-27T15:33:51.0602760Z     Updating crates.io index
+2026-11-27T15:33:51.4845434Z note: pass `--verbose` to see 4 unchanged dependencies behind latest
+2026-11-27T15:33:51.5225421Z     Updating crates.io index
+2026-11-27T15:33:51.6865740Z error: failed to select a version for the requirement `serde = "^1.0.217"`
+2026-11-27T15:33:51.6866537Z candidate versions found which didn't match: 1.0.210
+2026-11-27T15:33:51.6867102Z location searched: crates.io index
+2026-11-27T15:33:51.6867684Z required by package `solana-program v2.3.0`
+2026-11-27T15:33:51.6868539Z     ... which satisfies dependency `solana-program = "^2"` (locked to 2.3.0) of package `anchor-lang v0.31.2`
+2026-11-27T15:33:51.6869750Z     ... which satisfies dependency `anchor-lang = "=0.31.2"` (locked to 0.31.2) of package `blueshift_anchor_vault v0.1.0 (/home/runner/work/solana-vault-2026/solana-vault-2026)`
+2026-11-27T15:33:51.6895839Z ##[error]Process completed with exit code 101.
+2026-11-27T15:33:51.7025498Z Post job cleanup.
+2026-11-27T15:33:51.7737271Z [command]/usr/bin/git version
+2026-11-27T15:33:51.7768799Z git version 2.56.1
+2026-11-27T15:33:51.7801633Z Temporarily overriding HOME='/home/runner/work/_temp/e982b481-98f0-455d-b115-3eb73ce7da9f' before making global git config changes
+2026-11-27T15:33:51.7803038Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-27T15:33:51.7806186Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/solana-vault-2026/solana-vault-2026
+2026-11-27T15:33:51.7870076Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-27T15:33:51.7899317Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-27T15:33:51.8113585Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-27T15:33:51.8139323Z http.https://github.com/.extraheader
+2026-11-27T15:33:51.8149930Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-27T15:33:51.8171908Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-27T15:33:51.8394341Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-27T15:33:51.8424975Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-27T15:33:51.8727263Z Cleaning up orphan processes
+2026-11-27T15:33:51.9005795Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
