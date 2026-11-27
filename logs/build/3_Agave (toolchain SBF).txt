@@ -1,0 +1,16 @@
+﻿2026-11-27T06:47:57.3912268Z ##[group]Run sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
+2026-11-27T06:47:57.3912764Z [36;1msh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"[0m
+2026-11-27T06:47:57.3913409Z [36;1mecho "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH[0m
+2026-11-27T06:47:57.3935406Z shell: /usr/bin/bash -e {0}
+2026-11-27T06:47:57.3935718Z ##[endgroup]
+2026-11-27T06:47:57.4338608Z downloading v2.1.21 installer
+2026-11-27T06:48:21.2482850Z   ✨ 2.1.21 initialized
+2026-11-27T06:48:21.2486768Z Adding 
+2026-11-27T06:48:21.2487394Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH" to /home/runner/.profile
+2026-11-27T06:48:21.2504735Z Adding 
+2026-11-27T06:48:21.2505231Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH" to /home/runner/.bash_profile
+2026-11-27T06:48:21.2508644Z 
+2026-11-27T06:48:21.2509294Z Close and reopen your terminal to apply the PATH changes or run the following in your existing shell:
+2026-11-27T06:48:21.2509979Z   
+2026-11-27T06:48:21.2510402Z export PATH="/home/runner/.local/share/solana/install/active_release/bin:$PATH"
+2026-11-27T06:48:21.2510731Z 
