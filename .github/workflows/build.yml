@@ -1,0 +1,21 @@
+name: build
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Agave (toolchain SBF)
+        run: |
+          sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+
+      - name: Compilar
+        run: cargo build-sbf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vault-so
+          path: target/deploy/*.so
