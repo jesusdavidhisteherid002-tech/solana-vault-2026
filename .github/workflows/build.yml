@@ -4,10 +4,13 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: rust:1.85-bookworm
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Agave (toolchain SBF)
+      - name: Instalar Agave
         run: |
           sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
           echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
