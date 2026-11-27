@@ -1,0 +1,45 @@
+﻿2026-11-27T15:36:25.9998231Z ##[group]Checking docker version
+2026-11-27T15:36:26.0010122Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+2026-11-27T15:36:27.7136743Z '1.54'
+2026-11-27T15:36:27.7147392Z Docker daemon API version: '1.54'
+2026-11-27T15:36:27.7147844Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+2026-11-27T15:36:27.7285567Z '1.54'
+2026-11-27T15:36:27.7292896Z Docker client API version: '1.54'
+2026-11-27T15:36:27.7296673Z ##[endgroup]
+2026-11-27T15:36:27.7298129Z ##[group]Clean up resources from previous jobs
+2026-11-27T15:36:27.7302065Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=304781"
+2026-11-27T15:36:27.7413427Z ##[command]/usr/bin/docker network prune --force --filter "label=304781"
+2026-11-27T15:36:27.7516723Z ##[endgroup]
+2026-11-27T15:36:27.7517058Z ##[group]Create local container network
+2026-11-27T15:36:27.7524078Z ##[command]/usr/bin/docker network create --label 304781 github_network_08b3aeb7587a45daa1afefe03c48cfe9
+2026-11-27T15:36:27.7810332Z 57be3015a72378fde1ea49a55a5da7c223af00edcc4a9a3db5bf9b1fbc287fa2
+2026-11-27T15:36:27.7822659Z ##[endgroup]
+2026-11-27T15:36:27.7840943Z ##[group]Starting job container
+2026-11-27T15:36:27.7855906Z ##[command]/usr/bin/docker pull solanalabs/solana:v1.18.26
+2026-11-27T15:36:27.9201855Z v1.18.26: Pulling from solanalabs/solana
+2026-11-27T15:36:28.0690144Z a620f3f44938: Pulling fs layer
+2026-11-27T15:36:28.0690668Z ce58ee9ad1d3: Pulling fs layer
+2026-11-27T15:36:28.0703212Z bbeef03cda1f: Pulling fs layer
+2026-11-27T15:36:28.3954438Z ce58ee9ad1d3: Download complete
+2026-11-27T15:36:28.6959705Z bbeef03cda1f: Download complete
+2026-11-27T15:36:29.3963699Z bbeef03cda1f: Pull complete
+2026-11-27T15:36:29.4972831Z ce58ee9ad1d3: Pull complete
+2026-11-27T15:36:31.4953438Z a620f3f44938: Download complete
+2026-11-27T15:36:34.3459562Z a620f3f44938: Pull complete
+2026-11-27T15:36:34.3460920Z Digest: sha256:098806e64d44bccdbedbf07c2edabd1c850b92c8a4a0f81eba9c789034813db6
+2026-11-27T15:36:34.3461722Z Status: Downloaded newer image for solanalabs/solana:v1.18.26
+2026-11-27T15:36:34.3465702Z docker.io/solanalabs/solana:v1.18.26
+2026-11-27T15:36:34.3542798Z ##[command]/usr/bin/docker create --name e6f7ead8b2864ebdb6f5466c2515dcc4_solanalabssolanav11826_5745d5 --label 304781 --workdir /__w/solana-vault-2026/solana-vault-2026 --network github_network_08b3aeb7587a45daa1afefe03c48cfe9  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/actions-runner/cached/2.338.2/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" solanalabs/solana:v1.18.26 "-f" "/dev/null"
+2026-11-27T15:36:37.6593883Z b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018
+2026-11-27T15:36:37.6616017Z ##[command]/usr/bin/docker start b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018
+2026-11-27T15:36:38.2316040Z b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018
+2026-11-27T15:36:38.2332540Z ##[command]/usr/bin/docker ps --all --filter id=b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-11-27T15:36:38.2448817Z b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018 Up Less than a second
+2026-11-27T15:36:38.2462440Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018
+2026-11-27T15:36:38.2552116Z GITHUB_ACTIONS=true
+2026-11-27T15:36:38.2552414Z CI=true
+2026-11-27T15:36:38.2552712Z HOME=/github/home
+2026-11-27T15:36:38.2553030Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2026-11-27T15:36:38.2564967Z ##[endgroup]
+2026-11-27T15:36:38.2572033Z ##[group]Waiting for all services to be ready
+2026-11-27T15:36:38.2573624Z ##[endgroup]

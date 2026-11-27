@@ -4,14 +4,13 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: solanalabs/solana:v1.18.26
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Instalar Anchor CLI
-        run: sh -c "$(curl -sSfL https://release.anza.xyz/v0.31.2/install)"
+      - name: Agave (toolchain SBF)
+        run: |
+          sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.21/install)"
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
 
       - name: Compilar
         run: cargo build-sbf

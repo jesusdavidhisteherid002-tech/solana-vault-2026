@@ -1,0 +1,30 @@
+﻿2026-11-27T15:36:38.2786059Z ##[group]Run actions/checkout@v4
+2026-11-27T15:36:38.2786508Z with:
+2026-11-27T15:36:38.2786790Z   repository: jesusdavidhisteherid002-tech/solana-vault-2026
+2026-11-27T15:36:38.2788888Z   token: ***
+2026-11-27T15:36:38.2789112Z   ssh-strict: true
+2026-11-27T15:36:38.2789323Z   ssh-user: git
+2026-11-27T15:36:38.2789565Z   persist-credentials: true
+2026-11-27T15:36:38.2789811Z   clean: true
+2026-11-27T15:36:38.2790363Z   sparse-checkout-cone-mode: true
+2026-11-27T15:36:38.2790633Z   fetch-depth: 1
+2026-11-27T15:36:38.2790839Z   fetch-tags: false
+2026-11-27T15:36:38.2791088Z   show-progress: true
+2026-11-27T15:36:38.2791316Z   lfs: false
+2026-11-27T15:36:38.2791531Z   submodules: false
+2026-11-27T15:36:38.2791749Z   set-safe-directory: true
+2026-11-27T15:36:38.2791997Z   allow-unsafe-pr-checkout: false
+2026-11-27T15:36:38.2792419Z ##[endgroup]
+2026-11-27T15:36:38.2839642Z ##[command]/usr/bin/docker exec  b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018 sh -c "cat /etc/*release | grep ^ID"
+2026-11-27T15:36:40.5327090Z Syncing repository: jesusdavidhisteherid002-tech/solana-vault-2026
+2026-11-27T15:36:40.5328524Z ##[group]Getting Git version info
+2026-11-27T15:36:40.5328905Z Working directory is '/__w/solana-vault-2026/solana-vault-2026'
+2026-11-27T15:36:40.5329445Z ##[endgroup]
+2026-11-27T15:36:40.5329772Z Deleting the contents of '/__w/solana-vault-2026/solana-vault-2026'
+2026-11-27T15:36:40.5330534Z The repository will be downloaded using the GitHub REST API
+2026-11-27T15:36:40.5330932Z To create a local Git repository instead, add Git 2.18 or higher to the PATH
+2026-11-27T15:36:40.5331314Z Downloading the archive
+2026-11-27T15:36:40.8959982Z Writing archive to disk
+2026-11-27T15:36:40.8967175Z Extracting the archive
+2026-11-27T15:36:40.9029559Z [command]/bin/tar xz --warning=no-unknown-keyword --overwrite -C /__w/solana-vault-2026/solana-vault-2026/11568a3c-7c9d-4d96-b5af-9922ea7d7456 -f /__w/solana-vault-2026/solana-vault-2026/11568a3c-7c9d-4d96-b5af-9922ea7d7456.tar.gz
+2026-11-27T15:36:40.9076968Z Resolved version jesusdavidhisteherid002-tech-solana-vault-2026-48c48ec

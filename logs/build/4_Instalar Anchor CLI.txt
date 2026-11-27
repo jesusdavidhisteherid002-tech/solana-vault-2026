@@ -1,0 +1,5 @@
+﻿2026-11-27T15:36:41.1012519Z ##[group]Run sh -c "$(curl -sSfL https://release.anza.xyz/v0.31.2/install)"
+2026-11-27T15:36:41.1013047Z [36;1msh -c "$(curl -sSfL https://release.anza.xyz/v0.31.2/install)"[0m
+2026-11-27T15:36:41.1015671Z shell: sh -e {0}
+2026-11-27T15:36:41.1015928Z ##[endgroup]
+2026-11-27T15:36:41.2556479Z /__w/_temp/09172b17-9593-490f-9640-95af621c9684.sh: 1: curl: not found

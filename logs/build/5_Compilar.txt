@@ -1,0 +1,6 @@
+﻿2026-11-27T15:36:41.2601175Z ##[group]Run cargo build-sbf
+2026-11-27T15:36:41.2601489Z [36;1mcargo build-sbf[0m
+2026-11-27T15:36:41.2601786Z shell: sh -e {0}
+2026-11-27T15:36:41.2602006Z ##[endgroup]
+2026-11-27T15:36:41.2959223Z /__w/_temp/fe4a62d9-87ee-4dd4-adfe-0c25316444b8.sh: 1: cargo: not found
+2026-11-27T15:36:41.2980502Z ##[error]Process completed with exit code 127.

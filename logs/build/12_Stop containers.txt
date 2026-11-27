@@ -1,0 +1,6 @@
+﻿2026-11-27T15:36:41.4388249Z Stop and remove container: e6f7ead8b2864ebdb6f5466c2515dcc4_solanalabssolanav11826_5745d5
+2026-11-27T15:36:41.4394011Z ##[command]/usr/bin/docker rm --force b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018
+2026-11-27T15:36:41.5138703Z b85512fd26dcb71fcdbf3f062d6c587468783626ce603c56390f6fa49eded018
+2026-11-27T15:36:41.5154045Z Remove container network: github_network_08b3aeb7587a45daa1afefe03c48cfe9
+2026-11-27T15:36:41.5156887Z ##[command]/usr/bin/docker network rm github_network_08b3aeb7587a45daa1afefe03c48cfe9
+2026-11-27T15:36:41.5826082Z github_network_08b3aeb7587a45daa1afefe03c48cfe9
